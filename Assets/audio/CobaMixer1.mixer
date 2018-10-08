@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CobaMixer1
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  - {fileID: 245255689718225548}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 6f0f22e99d63dd74cb77d362afaa73cf
+    - 2c84109e1d9394743830501ee393ef03
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 6f0f22e99d63dd74cb77d362afaa73cf
+  m_Children:
+  - {fileID: 243762270382312970}
+  m_Volume: 8f24b96b77805f847a1fae93d01e9d6c
+  m_Pitch: 67a97d1eb6c5da843b59508b74da9ba7
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: ab2751078ab57414daf50432a8782a95
+  m_EffectName: Attenuation
+  m_MixLevel: f008748138e1fba4fb7f789832d21d3c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Kiri
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 3af7b16391e230c4ca6e54bbfc835ddb
+  m_FloatValues:
+    4dab707995f42014a931bdfc75eff9ef: 0
+  m_TransitionOverrides: {}
+--- !u!243 &243762270382312970
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Suara1
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 2c84109e1d9394743830501ee393ef03
+  m_Children: []
+  m_Volume: 4dab707995f42014a931bdfc75eff9ef
+  m_Pitch: 2f140474bd3b49244a40540b4edd8b3c
+  m_Effects:
+  - {fileID: 244285026570568772}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244285026570568772
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8f2a03c4d6fafb84cad3b93f706f9302
+  m_EffectName: Attenuation
+  m_MixLevel: 5cc7276c5c93d484f9a316f3c1527ca9
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245255689718225548
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Kanan
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 7541d47dad1f50c469d372fc7be55dfc
+  m_FloatValues:
+    4dab707995f42014a931bdfc75eff9ef: -39.703533
+  m_TransitionOverrides: {}
